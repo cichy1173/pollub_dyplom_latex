@@ -60,6 +60,8 @@ Jestem tylko jednym z kilku autorów. Szkic powstał z pomocą takich deweloper�
 
 - [SEBAA300](https://github.com/SEBAA300)
 
+- [Wittano](https://github.com/Wittano)
+
 ## Skąd pomysł na szablon?
 
 LaTeX to świetne narzędzie do pisania skomplikowanych dokumentów, gdzie są trudne wymogi, a rozmiary projektu sprawiają, że ciężko pilnować i uważać na błędy. Niestety, WEII nie udostępnia szablonu LaTeX, a jedynie `.doc` (nawet nie `.docx`, który jest nieco łatwiejszy w interpretacji przez niezależne pakiety biurowe). To utrudnienie w pisaniu pracy dyplomowej, zwłaszcza dla osób niekorzystających z oprogramowania Microsoft Office oraz Microsoft Windows lub Apple macOS. LaTeX natomiast jest niezależny od platformy, a popularny edytor Overleaf jest uruchamiany w przeglądarce internetowej. To znacznie ułatwia pracę, a autor ma większą swobodę. 
