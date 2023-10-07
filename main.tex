@@ -1,0 +1,161 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[a4paper,twoside,top=2.5cm,bottom=2cm,inner=3.5cm,outer=2cm]{geometry}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{fontspec} % Dla Arial na stronie tytułowej
+\newfontfamily\titlepagefont{Arial} % Ustalenie czcionki dla strony tytułowej
+%\setstretch{1.5} 
+
+
+\usepackage{newtxtext} % Czcionka New Times Roman
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage[utf8]{inputenc}
+\usepackage[english, polish]{babel}
+\babelprovide[transforms = oneletter.nobreak]{polish} 
+\usepackage[T1]{polski}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{biblatex}
+\usepackage{tabularx}
+\usepackage{xltabular}
+\usepackage{multirow}
+\usepackage{stackengine}
+\usepackage{tocloft}
+\usepackage{enumitem}
+\usepackage{chngcntr}
+\usepackage{newfloat}
+\usepackage[font=normalsize]{caption}
+\usepackage[justification=centering]{caption}
+\usepackage{boldline}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage{csquotes}
+
+
+\DeclareFloatingEnvironment{graph}
+
+\addbibresource{bib/thesis.bib}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash} m{#1} }
+\newcolumntype{?}{!{\vrule width 1.5pt}}
+
+\addto\captionsenglish{
+  \renewcommand{\figurename}{Rysunek}
+  \renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+  \renewcommand{\graphname}{Listing}
+  \renewcommand{\thegraph}{\arabic{section}.\arabic{graph}}
+  \renewcommand{\contentsname}{Spis treści}
+}
+
+
+\addto\captionsenglish{
+    \renewcommand{\figurename}{Rysunek}
+    \renewcommand{\graphname}{Listing}
+    \renewcommand{\thegraph}{\arabic{section}.\arabic{graph}}
+    \renewcommand{\contentsname}{Spis treści}
+}
+
+
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+
+\newcommand{\row}[1]{\hline #1 \\}
+\newcommand{\image}[2]{\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{#1}
+    \caption{#2}
+    \label{fig:image}
+\end{figure}
+\par}
+
+\newcommand{\lis}[3]{\begin{graph}[h!]
+    \centering
+    \caption{#2}
+    \includegraphics[#3]{#1}
+    \label{fig:graph}
+\end{graph}
+\par}
+
+\def\blankpage{%
+      \clearpage%
+      \thispagestyle{empty}%
+      \null%
+      \clearpage}
+
+\lstset{
+    basicstyle=\small\ttfamily, % Adjust the font size here
+   % framerule=0.5pt,
+}
+
+\newcommand{\newCharapter}[1]{\newpage \include{#1}}
+
+
+\begin{document}
+
+\counterwithin{figure}{section}
+\counterwithin{lstlisting}{section}
+\counterwithin{table}{section}
+
+\begin{titlepage}
+
+    \titlepagefont
+    \hspace*{-0.5cm}{\includegraphics[width=7cm]{img/title/weii-2.jpg}} \\
+    \vspace{4cm}
+    \break
+    \fontsize{1.4cm}{1.4cm}\titlepagefont {Praca dyplomowa} \\
+    \fontsize{1.4cm}{1.4cm}\titlepagefont {magisterska} \\
+    \vspace{0.5cm}
+    \break
+    \normalsize{} na kierunku Informatyka \\
+    na bloku dyplomowania Aplikacje Internetowe \\
+    \vspace{1cm}
+    \break
+    \large
+    Wielokryterialna analiza porównawcza menedżerów pakietów wykorzystywanych do dystrybucji oprogramowania o otwartym kodzie \\
+    \break
+    Multi-criteria comparative analysis of package managers used for open source software distribution \\
+    \vspace{1.5cm}
+    \break
+    inż. Grzegorz Jan Cichocki \\
+    numer albumu   \\
+    \vspace{1.5cm}
+    \break
+    \normalsize{}
+    Promotor Dr inż. Sławomir Przyłucki
+    \vspace*{\fill}
+    \vspace{0.5cm}
+    \begin{figure*}[bbp]
+        {\titlepagefont Lublin 2023}
+    \end{figure*}
+\end{titlepage}
+\newpage
+
+\onehalfspacing
+\blankpage
+
+\newCharapter{chapters/chapter0}
+\setcounter{figure}{0}
+\tableofcontents
+\newCharapter{chapters/chapter1}
+\setcounter{figure}{0}
+\newCharapter{chapters/chapter2}
+\setcounter{figure}{0}
+\newCharapter{chapters/chapter3}
+\setcounter{figure}{0}
+\newCharapter{chapters/chapter4}
+\setcounter{figure}{0}
+\newCharapter{chapters/chapter5}
+\setcounter{figure}{0}
+\newCharapter{chapters/chapter6}
+\setcounter{figure}{0}
+\newCharapter{chapters/chapter7}
+\setcounter{figure}{0}
+\newCharapter{chapters/chapter8}
+
+
+\printbibliography[type=article,title={Źródła naukowe}]
+\printbibliography[type=online,title={Źródła internetowe}]
+%\printbibliography[sorting=nyt, title={Bibliografia}]
+
+\end{document}
