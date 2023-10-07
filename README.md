@@ -20,7 +20,7 @@ Instrukcja:
 
 6. Zacznij pisać pracę zgodnie z szablonem, nie musisz nic modyfikować, po prostu podmień dane na swoje. 
 
-7. W pliku pokazano przykład cytowań, referencji, dodawania tabel z obsługą dzielenia na strony, dodawanie obrazków, listingów i wykresów. **Trzymaj się schematu, a całość ładnie samo się odpowiednio ponumeruje.**
+7. W pliku pokazano przykład cytowań, referencji, dodawania tabel z obsługą dzielenia na strony, dodawanie obrazków, listingów i wykresów. **Trzymaj się schematu, a całość ładnie sama się odpowiednio ponumeruje.**
 
 ## Co robi szablon?
 
