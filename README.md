@@ -14,7 +14,7 @@ Instrukcja:
 
 3. Kliknij `New project` i wybierz opcję z wysłaniem szkicu jako `.zip`.
 
-4. Domyślnie projekt nie skompiluje się. Należy wejść w ustawienia projektu (ikonka domu w górnym, lewym rogu) i ****zmienić kompilator `Compiler` z `pdfLaTeX` na `LuaLaTeX`.**
+4. Domyślnie projekt nie skompiluje się. Należy wejść w ustawienia projektu (ikonka domu w górnym, lewym rogu) i **zmienić kompilator `Compiler` z `pdfLaTeX` na `LuaLaTeX`.**
 
 5. Pierwsze kompilowanie może zająć sporo czasu. 
 
